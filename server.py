@@ -10,3 +10,5 @@ print("Server is up. Listening for connections...")
 client, address = s.accept()
 print("Connection to ...", address, "established\n")
 print("Client Object:", client, "\n")
+
+client.send(bytes("Hello! Welcome to socket programming.", "utf-8"))
