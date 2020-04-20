@@ -12,3 +12,5 @@ print("Connection to ...", address, "established\n")
 print("Client Object:", client, "\n")
 
 client.send(bytes("Hello! Welcome to socket programming.", "utf-8"))
+
+s.close()
