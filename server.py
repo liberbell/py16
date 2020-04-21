@@ -4,6 +4,7 @@ import socket
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     s.bind(("0.0.0.0", 4571))
+    s.settimeout(5)
     s.listen(5)
 
     print("Server is up. Listening for connections...")
