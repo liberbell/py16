@@ -8,3 +8,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         msg = s.recv(1024)
         if not msg:
             print("No message from the server.Closing the connection...")
+            break
+
+        print("Message from server:", msg.decode("utf-8"))
+        print("Type of recieved message", type(msg))
