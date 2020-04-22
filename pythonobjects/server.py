@@ -16,4 +16,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Client object", client, "\n")
 
     client.send(python_dictionary)
-    client.send(custom_object))
+    client.send(custom_object)
