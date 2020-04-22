@@ -7,7 +7,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     python_dictionary = {"a": 1, "b": 2}
     picked_dictionary = pickle.dumps(python_dictionary)
+
     custom_object = Product("P024", "Torch", 13)
+    picked_object = pickle.dumps(custom_object)
 
     s.listen(5)
 
