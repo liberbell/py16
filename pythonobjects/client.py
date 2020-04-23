@@ -19,5 +19,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
         # print("Type of deserialized message:", type(unpicked_data))
         # print("Deserialized data:", unpicked_data)
-        print("Type of deserialized message:", type(product_data))
-        print("Deserialized data:", product_data)
+        print("Product ID:", product_data.pid)
+        print("Product Name:", product_data.pname)
+        print("Product Price:", product_data.pprice)
