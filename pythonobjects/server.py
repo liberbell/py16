@@ -6,13 +6,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind(("0.0.0.0", 4571))
 
     python_dictionary = {"a": 1, "b": 2}
-    picked_dictionary = pickle.dumps(python_dictionary)
+    pickeld_dictionary = pickle.dumps(python_dictionary)
 
     custom_object = Product("P024", "Torch", 13)
-    picked_object = pickle.dumps(custom_object)
+    pickled_object = pickle.dumps(custom_object)
 
-    print("Serialized dictionary type:", type(picked_dictionary))
-    print("Serialized object type:", type(picked_object))
+    print("Serialized dictionary type:", type(pickled_dictionary))
+    print("Serialized object type:", type(pickeld_object))
 
     s.listen(5)
 
@@ -22,5 +22,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Connection to", address, "established\n")
     print("Client object", client, "\n")
 
-    client.send(picked_dictionary)
-    client.send(picked_object)
+    client.send(pickled_dictionary)
+    client.send(pickled_object)
