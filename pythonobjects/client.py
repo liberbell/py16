@@ -21,4 +21,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         # print("Deserialized data:", unpicked_data)
         print("Product ID:", product_data.pid)
         print("Product Name:", product_data.pname)
-        print("Product Price:", product_data.pprice)
+        print("Product Price:", product_data.pprice, "\n\n")
