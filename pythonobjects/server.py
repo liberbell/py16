@@ -23,4 +23,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Client object", client, "\n")
 
     client.send(picked_dictionary)
-    client.send(custom_object)
+    client.send(picked_object)
