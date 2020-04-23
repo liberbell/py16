@@ -12,10 +12,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             break
 
         # print("Message from server:", msg.decode("utf-8"))
-        print("Type of recieved message", type(msg))
-        print("Message data:", msg)
+        # print("Type of recieved message", type(msg))
+        # print("Message data:", msg)
 
-        unpicked_data = pickle.loads(msg)
+        product_data = pickle.loads(msg)
 
-        print("Type of deserialized message:", type(unpicked_data))
-        print("Deserialized data:", unpicked_data)
+        # print("Type of deserialized message:", type(unpicked_data))
+        # print("Deserialized data:", unpicked_data)
+        print("Type of deserialized message:", type(product_data))
+        print("Deserialized data:", product_data)
