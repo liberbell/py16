@@ -34,3 +34,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     for product in custom_products:
         pickle_product = pickle.dumps(product)
         client.send(pickle_product)
+
+        print("Sent product:", product.pid)
+        time.sleep(2)
